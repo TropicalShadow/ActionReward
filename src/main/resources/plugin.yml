@@ -1,0 +1,6 @@
+name: ActionReward
+main: me.tropicalshadow.actionreward.ActionReward
+version: @version@
+commands:
+  actionreward:
+    description: "Action Reward root command"

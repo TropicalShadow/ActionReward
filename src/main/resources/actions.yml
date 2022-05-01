@@ -1,0 +1,16 @@
+
+player_kill_player: #placeholders %player% %displayname% <- killer   | %other% %other_displayname% <- victim | %cause% <- cause of death
+  - "kill %player%"
+  - "<message> %player% bad behaviour you shouldn't kill %other%"
+player_kill_mob: #placeholders %player% %displayname% <- killer   | %other% %other_displayname% %other_entitytype% <- victim | %cause% <- cause of death
+  ZOMBIE:
+    - "<message> %player% you killed a %other%"
+player_time_played: #placeholders %player% %displayname% <- player | %time% <- time
+  69:
+    - "<message> %player% You played for %time% seconds"
+player_mined_block: #placeholders %player% %displayname% <- miner | %block% <- block material name | %x% %y% %z% cords of block
+  STONE:
+    - "<message> %player% you broke a %block% block as %x% %y% %z%"
+
+# <message> sends a player a direct message
+# anything else will be tried to run as a command
